@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<web-app xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+
+<servlet>
+
+<servlet-name>com.murad.restfulejb.service.Service</servlet-name>
+
+<!-- <servlet-class>com.restfulejb.service.Service</servlet-class> -->
+
+</servlet>
+
+<servlet-mapping>
+
+<servlet-name>com.murad.restfulejb.service.Service</servlet-name>
+
+<url-pattern>/api/*</url-pattern>
+
+</servlet-mapping>
+
+</web-app>
