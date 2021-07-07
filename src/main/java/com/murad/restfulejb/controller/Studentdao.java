@@ -15,11 +15,12 @@ import javax.ejb.Stateless;
 @LocalBean
 public class Studentdao implements Dao
 {
-    private EntityManager em = Persistence.createEntityManagerFactory("restfulejb").createEntityManager();;
-    private EntityTransaction tr = em.getTransaction();
+    private EntityManager em;
+    private EntityTransaction tr;
     
     public Studentdao() {
-        
+    	this.em = Persistence.createEntityManagerFactory("restfulejb").createEntityManager();
+    	this.tr = em.getTransaction();
     }
     
     @Override
